@@ -5,4 +5,10 @@ module com.example.testtask1 {
 
     opens com.example.testtask1 to javafx.fxml;
     exports com.example.testtask1;
+
+
+    opens main.Controller to javafx.fxml;
+    exports main.Controller;
+    //exports main.Model;
+    //opens main.Model to javafx.fxml;
 }

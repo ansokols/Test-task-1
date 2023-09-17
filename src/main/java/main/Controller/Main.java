@@ -1,4 +1,4 @@
-package com.example.testtask1;
+package main.Controller;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,16 +10,10 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
-public class HelloApplication extends Application {
+public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-//        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("src/main/java/com/example/testtask1/hello-view.fxml"));
-//        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-//        stage.setTitle("Hello!");
-//        stage.setScene(scene);
-//        stage.show();
-
-        URL url = new File("src/main/java/com/example/testtask1/hello-view.fxml").toURI().toURL();
+        URL url = new File("src/main/java/main/View/main.fxml").toURI().toURL();
         Parent root = FXMLLoader.load(url);
         Scene scene = new Scene(root);
         stage.setScene(scene);
